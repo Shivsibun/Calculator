@@ -8,52 +8,52 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
+        confirm("Are you human😂🤣?(ok/cancel)");
         $(document).ready(function(){
             $(".but").click(function(){
-                $(".calculator").fadeIn(4000);
+                $(".container").fadeIn(4000);
                 $(".but").hide();
             });
             $(".shw").click(function(){
-                $(".calculator").fadeOut(1);
+                $(".container").fadeOut(1);
                 $(".but").show("slow");
             });
-        });
-
+        })
     </script>
 </head>
 <body>
-    <button class="but">Clict to start calculating</button>
-   <div class="calculator">
-        <input type="text"placeholder="0"id="inputBox"readonly>
+    <button class="but">CLICK TO START CALCULATING</button>
+   <div class="container">
+    <input type="text" class="display">
         <div>
-            <button class="dac">AC</button>
-            <button class="dac">DEL</button>
-            <button class="operator">%</button>
-            <button class="operator">/</button>
+            <button class="dac ab">AC</button>
+            <button class="dac ab">DEL</button>
+            <button class="operator ab">%</button>
+            <button class="operator ab">/</button>
         </div>
         <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">*</button>
+            <button class="ab">7</button>
+            <button class="ab">8</button>
+            <button class="ab">9</button>
+            <button class="operator ab">*</button>
         </div>
         <div>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
+            <button class="ab">4</button>
+            <button class="ab">5</button>
+            <button class="ab">6</button>
+            <button class="operator ab">-</button>
         </div>
         <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
+            <button class="ab">1</button>
+            <button class="ab">2</button>
+            <button class="ab">3</button>
+            <button class="operator ab">+</button>
         </div>
         <div>
-            <button class="shw">STOP</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="equalbtn">=</button>
+            <button class="shw ab">STOP</button>
+            <button class="ab">0</button>
+            <button class="ab">.</button>
+            <button class="dac ab">=</button>
         </div>
    </div>
    <script src="script.js"></script>

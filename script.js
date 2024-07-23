@@ -1,7 +1,8 @@
-let display=document.getElementById('inputBox');
-let buttons=document.querySelectorAll('button');
+let display=document.querySelector('.display');
+let buttons=document.querySelectorAll('.ab');
 let buttonsArray=Array.from(buttons);
 let string='';
+
 buttonsArray.forEach(function(btn){
     btn.addEventListener('click',function(event){
 
@@ -23,4 +24,10 @@ buttonsArray.forEach(function(btn){
         }
         
     })
-})
+});
+gsap.timeline({ repeat: -1, yoyo: true })
+.to(".container", { backgroundColor: "#1b4f8a", duration: 0.2, ease: "linear" })
+.to(".container", { backgroundColor: "#398699",color:"black", duration: 0.2, ease: "linear" })
+.to(".container", { backgroundColor: "#65caf2",color:"black", duration: 0.2, ease: "linear" })
+.to(".container", { backgroundColor: "#6ae9ff",color:"black",  duration: 0.2, ease: "linear" })
+.to(".container", { backgroundColor: "#0a2c54", duration:0.2, ease: "linear" });
